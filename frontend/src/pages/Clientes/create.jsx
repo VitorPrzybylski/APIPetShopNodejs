@@ -20,6 +20,7 @@ export default function Createcliente() {
         setCliente({
             ...cliente,
             [id]: value
+            // SDASDS
         })
     }
 
