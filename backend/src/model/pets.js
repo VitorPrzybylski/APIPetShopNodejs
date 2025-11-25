@@ -18,13 +18,13 @@ class Pets {
             pelagem: {
                 type: database.db.Sequelize.STRING
             },
-            clienteId: {
+            clientId: {
                 type:database.db.Sequelize.INTEGER,
                 forgeinKey:true
             }
         })
         this.model.belongsTo(Clientes)
-        Clientes.hasMany(this.model,{ foreignKey: 'clienteId' })
+        Clientes.hasMany(this.model,{ foreignKey: 'clientId' })
 
         
     }

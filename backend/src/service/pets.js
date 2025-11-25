@@ -5,7 +5,7 @@ class ServicePets {
     }
     async Create(nome,raca,pelagem,clientId) {
         if (!nome || !raca|| !pelagem|| !clientId) {
-            throw new Error("favor preencher todos os campos")
+            throw new Error("favor preencher todos os campos de pets")
         }
         await Pets.create({
            nome,

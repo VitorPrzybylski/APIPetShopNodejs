@@ -10,8 +10,8 @@ class ControllerPets {
     }
     async Create(req, res) {
         try {
-            const {nome,raca,pelagem,clienteId } = req.body
-            await ServicePets.Create(nome,raca,pelagem,clienteId)
+            const {nome,raca,pelagem,clientId } = req.body
+            await ServicePets.Create(nome,raca,pelagem,clientId)
             res.status(201).send()
         } catch (error) {
             res.status(500).send({ error: error.message })
